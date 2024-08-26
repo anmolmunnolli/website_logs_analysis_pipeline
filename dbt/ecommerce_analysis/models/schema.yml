@@ -1,0 +1,22 @@
+
+version: 2
+
+models:
+  - name: session_analysis
+    description: "analyses the user web activity trends"
+    columns:
+      - name: ip
+        description: "The IP address of the user."
+        tests:
+          - unique
+          - not_null
+      - name: total_session_duration
+        description: "The total duration of sessions for the IP address."
+      - name: sessions_count
+        description: "The total number of sessions for the IP address."
+      - name: total_sales
+        description: "The total sales amount for the IP address."
+      - name: total_returned
+        description: "The total returned amount for the IP address."
+      - name: most_common_protocol
+        description: "The most common network protocol used by the IP address."

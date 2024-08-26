@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: ecommerce_source
+    database: ecommerce_logs
+    schema: web_activity_schema
+    tables:
+      - name: ecommerce_logs
+        description: "Table containing e-commerce logs"
