@@ -5,8 +5,6 @@ import logging
 import pandas
 from pyspark.sql import SparkSession
 
-# logging.basicConfig(level=logging.DEBUG)
-
 load_dotenv()
 
 spark = SparkSession.builder \
@@ -14,7 +12,6 @@ spark = SparkSession.builder \
     .config("spark.jars.packages", "net.snowflake:spark-snowflake_2.12:2.9.0-spark_3.1,net.snowflake:snowflake-jdbc:3.18.0") \
     .getOrCreate()
 
-# Read CSV file into DataFrame
 df = spark.read.csv(r"C:\Users\anmol\Desktop\de\data\E_commerce_Website_Logs.csv", header=True, inferSchema=True)
 
 snow_flk_acc = os.getenv("SNOWFLAKE_ACCOUNT")
@@ -72,7 +69,7 @@ put_query = "PUT file:///C:/Users/anmol/Desktop/de/data/E_commerce_Website_Logs.
 conn.cursor().execute(put_query)
 print("File uploaded to Snowflake stage")
 
-# COPY INTO command to load data into the table
+
 copy_query = """
 COPY INTO ecommerce_logs
 FROM @%ecommerce_logs/E_commerce_Website_Logs.csv
@@ -91,14 +88,12 @@ options = {
     "sfWarehouse": snow_flk_warehouse
 }
 
-# Write DataFrame to Snowflake
 df.write.format("snowflake") \
     .options(**options) \
     .option("dbtable", "ecommerce_logs") \
     .mode("overwrite") \
     .save()
 
-# Cleanup
 spark.stop()
 
 cursor.close()
