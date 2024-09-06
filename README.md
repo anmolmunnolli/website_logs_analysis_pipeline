@@ -16,3 +16,5 @@ Analyze payment methods used by customers.
 4. Language Preferences:
 Determine the most common languages used by customers.
 Group users by language and analyze their spending behavior.
+
+![image](https://github.com/user-attachments/assets/77c74aef-0bbf-46a8-83bb-7bf24bacb107)
