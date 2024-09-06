@@ -1,4 +1,4 @@
-This is a dashboard website project that performs analysis on e-commerce website logs. The logs are stored on snowflake, data transformations are performed using dbt. The dashboard is created using Tableau. Data orchestration is done on Apache airflow.
+This project performs analysis on e-commerce website logs. The logs are stored on snowflake, data transformations are performed using dbt. The dashboard is created using Tableau. Data orchestration is done on Apache airflow.
 
 Tools used:
 
