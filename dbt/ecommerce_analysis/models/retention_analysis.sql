@@ -14,4 +14,4 @@ SELECT
     last_session_date
 FROM user_activity
 ORDER BY active_days DESC
-LIMIT 500
+LIMIT 2000

@@ -14,4 +14,4 @@ SELECT
     total_returns
 FROM traffic_revenue
 ORDER BY total_revenue DESC
-LIMIT 500
+LIMIT 2000

@@ -14,4 +14,4 @@ SELECT
     avg_cart_value
 FROM user_cart_value
 ORDER BY avg_cart_value DESC
-LIMIT 500
+LIMIT 2000

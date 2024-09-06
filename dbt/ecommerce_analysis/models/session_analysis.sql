@@ -17,4 +17,4 @@ SELECT
     total_returned,
     most_common_protocol
 FROM sessions
-LIMIT 500
+LIMIT 2000
