@@ -31,3 +31,4 @@ Determines the average cart value of a user, based on their sessions and activit
 Tableau dashboard : https://public.tableau.com/views/ecommerce_analysis_17256397926520/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 
+![dashboard](<data/Dashboard 1 (2).png>)
