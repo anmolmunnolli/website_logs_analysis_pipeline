@@ -14,7 +14,7 @@ Tools used:
 
 
 4 Data Models considered:
-
+    
 1. Session Analysis:
 Calculate the total duration of sessions per user.
 Aggregate sales and returned amounts per user.
